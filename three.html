@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 6</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <center> 
+    <h1> WELCOME</h1>
+    <h4 id="time"> </h4>
+    <h2 id='attribute'> hey i am a demo text</h2>
+    <script>
+       // var a = prompt("enter your name")
+        function clock(){
+            let date = new Date();
+            let time = date.toLocaleTimeString();
+             ctime.innerHTML = time;
+        }
+        const ctime=document.getElementById("time")
+        clock();
+        setInterval(clock,1000);
+
+    function changeColor(){
+        setTimeout(()=>{
+            document.body.style.backgroundColor = 'lightblue'
+
+        },3000);
+    }
+   // changeColor();
+
+     const attr = document.getElementById("attribute")
+     attr.getAttribute('id')
+     //attr.setAttribute('style','color:red')
+     //attr.setAttribute('style','background-color:blue')
+
+    
+     attr.classList.add('blue')
+     attr.classList.add('bgYellow')
+     attr.classList.remove('blue')
+     attr.classList.toggle('blue')
+     attr.classList.toggle('blue')
+
+    </script>
+</body>
+</html>
