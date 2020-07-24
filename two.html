@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 6</title>
+    <style>
+      #div1
+      {
+        border : 2px solid red;
+        background-color : orange;
+        height:250px;
+        width:400px;
+        border-radius:10px;
+        color:blue;
+      }
+    </style>
+</head>
+<body>
+    <center>
+    <div id="div1">
+        <h1> welcome to <br/> javascript </h1>
+    </div>
+    <script>
+     var i=0;
+     var j=0;
+     function divchange(){
+         var divtag=document.getElementById("div1")
+         var bgcolor = ["purple","yellow","blue","brown"]
+        var txtcolor=["red","black","gray","yellow"];
+        divtag.style.backgroundColor=bgcolor[i];
+        divtag.style.color=txtcolor[j];
+        i=(i+1)%bgcolor.length;
+        j=(j+1)%txtcolor.length;
+     }
+     setInterval(divchange,2000);
+
+
+    </script>
+    
+</body>
+</html>
